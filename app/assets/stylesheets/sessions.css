@@ -1,0 +1,528 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+ font-family: 'OpenSansRegular';
+ src: url('themes/fonts/OpenSans-Regular-webfont.eot');
+ src: url('themes/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+   url('themes/fonts/OpenSans-Regular-webfont.woff') format('woff'),
+   url('themes/fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+   url('themes/fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'OpenSansLight';
+ src: url('themes/fonts/OpenSans-Light-webfont.eot');
+ src: url('themes/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+   url('themes/fonts/OpenSans-Light-webfont.woff') format('woff'),
+   url('themes/fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+   url('themes/fonts/OpenSans-Light-webfont.svg#OpenSansRegular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'OpenSansItalic';
+ src: url('themes/fonts/OpenSans-Italic-webfont.eot');
+ src: url('themes/fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+   url('themes/fonts/OpenSans-Italic-webfont.woff') format('woff'),
+   url('themes/fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+   url('themes/fonts/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('themes/fonts/OpenSans-Bold-webfont.eot');
+    src: url('themes/fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('themes/fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('themes/fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('themes/fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansBoldItalic';
+    src: url('themes/fonts/OpenSans-BoldItalic-webfont.eot');
+    src: url('themes/fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('themes/fonts/OpenSans-BoldItalic-webfont.woff') format('woff'),
+         url('themes/fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+         url('themes/fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('themes/fonts/OpenSans-Semibold-webfont.eot');
+    src: url('themes/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('themes/fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('themes/fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('themes/fonts/OpenSans-Semibold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-size: 13px;
+    background: url(themes/base/images/loginbg.jpg) repeat;
+    font-family: 'OpenSansRegular';
+}
+
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+
+input[type="text"], input[type="password"], textarea {
+    font-family: 'OpenSansRegular' Calibri, "Ubuntu", Arial, Sans-Serif;
+}
+
+input[type="text"], input[type="password"], textarea {
+    padding: 3px 5px;
+   width: 295px;
+   background: transparent;
+    border: solid 1px #FFF;
+    
+    color: #FFF
+}
+
+input.login 
+{
+    background: url("themes/base/images/user.png") no-repeat 5px center ;
+}
+
+input.password 
+{
+    background: url("themes/base/images/password.png") no-repeat 5px center ;
+}
+
+input.login, input.password
+{
+    text-indent: 30px;
+    line-height: 18px;
+    height: 25px;
+} 
+
+
+
+.validation { clear: both; display: block; text-align: left; color: #FFF; padding: 0 !important}
+.logincheck { margin-top: 0px; }
+
+a {
+    color: #5581a6;
+    text-decoration: none;
+}
+
+#loginForm 
+{
+    width: 307px;
+    height: 225px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-top: -112px;
+    margin-left: -153px;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+header {
+    background-color: #152c5e;
+    color: #fbfbfb !important;
+    padding: 10px;
+    height: 30px;
+    overflow: hidden;
+}
+
+    header a {
+        color: #fbfbfb !important;
+    }
+
+        header a:hover {
+            text-decoration: none !important;
+        }
+        
+    header .logout {
+        width: 19px; height: 19px;
+        background: url('themes/base/images/icon-logout.png') no-repeat;
+        text-indent: 30px;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        top: 5px;
+    }
+    
+    header .user 
+    {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+footer {
+    background-color: #7f7f7f;
+    padding: 10px;
+    color: #FFF;
+    overflow: hidden;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+#content {
+    clear: both;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.voice-header-div {
+    height: 100px;
+}
+
+.left-pane {
+    float: left;
+    height: 107px;
+    width: 20%;
+    background: url(themes/base/images/patternbg.png) repeat-x #efefef;
+    border-right: solid 1px #e3e3e3;
+    margin-left: -1px;
+}
+
+#leftContent.left-pane 
+{
+    background: #efefef;}
+
+.left-pane .container 
+{
+    position: relative;
+    top: 32px;
+    left: 20px;
+    width: 80%;
+}
+
+.left-pane .leftPanelHeading 
+{
+    font-size: 16px;
+    background: url(themes/base/images/icon-message.png) no-repeat;
+    padding-left: 25px;    
+    }
+    
+.left-pane .searchfield 
+{
+    position: relative;
+    top: 14px;
+}
+
+.left-pane .searchfield .searchIco 
+{
+    width: 15px;
+    height: 15px;
+    background: url(themes/base/images/icon-search.png) no-repeat;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    
+}
+
+.left-pane .searchfield input
+{
+    width: 98%;
+    border: none;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+
+.right-pane 
+{
+    background: url(themes/base/images/rightheader-bg.png) repeat-x;
+    float: left;
+    height: 107px;
+    width: 80%;
+}
+
+#rightContent.right-pane 
+{
+    background: #FFF
+}
+
+.right-pane .headingContainer 
+{
+    position: relative;
+    top: 27px;
+    left: 20px;
+    width: 50%
+}
+
+.right-pane .headingContainer h1 
+{
+    font-family: 'OpenSansLight';
+    font-size: 30px;
+    font-weight: normal;
+    color: #000
+}
+
+.right-pane .headingContainer h1 span 
+{
+    font-size: 13px;
+    color: #02588b;
+}
+
+.right-pane ul 
+{
+    position: relative;
+    top: -27px;
+    right: 20px;
+    list-style: none;
+    float: right;
+}
+
+.right-pane ul li 
+{
+    width: 56px;
+    display: inline-block;
+    margin-right: 10px;
+    float: left;
+}
+
+.right-pane ul li a 
+{
+    width: 56px;
+    text-align: center;
+    padding-top: 58px;
+    display: inline-block;
+}
+
+.right-pane ul li a:hover 
+{
+    text-decoration: none;
+}
+
+.right-pane ul li a.unread 
+{
+    background: url(themes/base/images/icon-unread.png) no-repeat; }
+
+.right-pane ul li a.delete 
+{
+    background: url(themes/base/images/icon-delete.png) no-repeat;}
+
+.tfn-list li {
+    padding:5px 10px ;
+    height: 19px;
+    font-size: 12px;
+    text-indent: 15px;
+    background: url(themes/base/images/leftpanel-seperator.png) repeat-x bottom left;
+}
+
+.tfn-list li span 
+{
+    font-size: 11px;
+    margin-right: 25px;
+}
+
+.tfn-list li:hover 
+{
+    background-color:#d3d4d6}
+
+#showtable { margin: 10px; }
+.alert { color: #666; padding: 10px 10px 10px 30px; background: url(themes/base/images/ico-info.png) #FCF8E3 no-repeat 10px center; }
+
+
+#ajax-progress {color: #666; padding: 10px 10px 10px 30px; background: url(themes/base/images/ajax-loader.gif) #DFF0D8 no-repeat 10px center; }
+.vm-search-bar {
+    margin: 10px;
+    
+}
+
+.vm-search-bar .searchfield 
+{
+    position: relative;
+    float: right;
+}
+
+.vm-search-bar .searchMain 
+{
+    width: 25px;
+    height: 26px;
+    background: url(themes/base/images/icon-searchMain.png) no-repeat;
+    border: none;
+}
+
+.vm-search-bar .searchBox
+{
+     width: 250px;
+    border: none;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1px #bdbdbd;
+    
+}
+
+.vm-search-bar input 
+{
+    padding-top: 2px; padding-bottom: 2px; 
+    margin-right: 5px;
+    text-indent: 5px;}
+.vm-search-bar label 
+{
+    color: #8d8d8d;
+    font-size: 12px;
+    margin:0 5px;
+    display: inline-block;}
+.vm-search-bar .searchfield .searchIco {
+   background: url("themes/base/images/icon-search.png") no-repeat scroll 0 0 transparent;
+    height: 15px;
+    position: absolute;
+    right: 12px;
+    top: 4px;
+    width: 15px;
+}
+
+.celltrimming {
+    text-overflow: ellipsis;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.celltrimming span 
+{
+    font-size: 11px;
+    color: #666;
+    padding: 0 5px;
+    border-right: solid 1px #CCC;
+    float: left;
+    display: inline-block;
+}
+
+.celltrimming span:last-child 
+{
+    border-right: none 
+}
+
+.vm-list {
+    clear: both;
+}
+
+    .vm-list table {
+        width: 100%;
+    }
+    .vm-list thead 
+    {
+        -webkit-border-radius: 3px;
+        border-radius: 3px; }
+        
+    .vm-list thead tr {
+        background-color: #1c4c96;
+        
+        color: white;
+        
+    }
+    
+    .vm-list tr.unread 
+    {
+       font-family: 'OpenSansSemibold';
+
+    }
+
+    .vm-list th, .vm-list td {
+        padding: 3px;
+        text-align: left;
+        border-bottom: solid 1px #CCC;
+        font-size: 12px;
+    }
+    
+    .vm-list .media 
+    {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .vm-list tr td .media.playIco  
+    {
+        background: url(themes/base/images/icon-play-read.png) no-repeat;
+    }
+    
+    .vm-list tr td .media.playIcoUnread  
+    {
+        background: url(themes/base/images/ico-play-unread.png) no-repeat;
+    }
+    
+    .vm-list tr td .media.pauseIco 
+    {
+        background: url(themes/base/images/icon-pause.png) no-repeat; 
+    }
+    
+    .vm-list td#dateTime span.time{ color: #00893c; margin-left: 5px; }
+    
+    input.deleteBtn { margin-left: 10px; width: 18px; height: 18px; background: url(themes/base/images/icon-delete-small.png) no-repeat; border: none }
+
+     .prevBtn {font-size: 11px; padding: 3px 4px 3px 20px; -webkit-border-radius: 3px;
+border-radius: 3px; color: #4b6aa3; background: url(themes/base/images/arrow-prev.png) no-repeat 9px center #efefef}
+
+    .nextBtn {font-size: 11px; padding: 3px 20px 3px 10px ; -webkit-border-radius: 3px;
+border-radius: 3px; color: #4b6aa3; background: url(themes/base/images/arrow-next.png) no-repeat 85% center #efefef}
+
+.vm-search-bar span{
+    
+}
+
+.page-index {
+    position:relative; 
+    right: 100px;
+}
+
+.login-button {
+    position: fixed;
+    margin-left: 700px;
+    margin-top: -28px;
+}
+
+#login {
+    display: block;
+    font-size: .85em;
+    text-align: center;
+   
+}
+    #login ul {
+        margin: 1px;
+    }
+
+    #login li {
+        display: block;
+        padding: 8px 0;
+        list-style: none;
+    }
+
+#login-logo 
+{
+    background: url(themes/base/images/loginlogo.png) no-repeat;
+    width: 307px;
+    height: 60px;
+}
+
+#remember-me {
+color: #FFF
+}
+
+input.loginbtn 
+{ background-color: #333;
+  color: #FFF;
+  padding: 5px 15px;
+  float: right;
+  text-transform: uppercase;
+  border: none;
+}
+
+input.loginbtn:hover { background-color: #7d7d7d; cursor: pointer; }
+

@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<%= stylesheet_link_tag "sessions", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="loginForm">
+		<%= form_for(:session, url: login_path) do |f| %>
+        	<ol id="login">
+            		<li>			
+				<p style="margin-left: 8%; font-size:25px; color:#FFF" >Complaint Box</p>
+           		</li>
+            		<li>
+				<%= f.text_field :email, :placeholder => "Email", class: 'login'%>
+	    		</li>
+            		<li>
+				<%= f.password_field  :password, :placeholder => "Password", class: 'password' %>
+            		</li>
+			<li>
+				<% if flash[:alert] %>
+					<p style="color: white; font-size:15px; right: 25%"> ! <%= flash[:alert] %></p>
+				<% end %>
+			</li>
+		</ol>
+        
+       		<div class="logincheck">
+			<%= f.submit "Log in",  class: "loginbtn" %>
+        	</div>
+		<% end %>
+  	</div>
+
+<script type="text/javascript">
+    if (navigator.userAgent.toLowerCase().indexOf("chrome") >= 0) {
+        $(window).load(function () {
+            $('input:-webkit-autofill').each(function () {
+                var text = $(this).val();
+                var name = $(this).attr('name');
+                $(this).after(this.outerHTML).remove();
+                $('input[name=' + name + ']').val(text);
+            });
+        });
+    }
+</script>
+   
+</body>
+</html>
+
