@@ -113,7 +113,7 @@ input.login, input.password
 
 
 .validation { clear: both; display: block; text-align: left; color: #FFF; padding: 0 !important}
-.logincheck { margin-top: 0px; }
+.logincheck { margin-top: 5px; }
 
 a {
     color: #5581a6;

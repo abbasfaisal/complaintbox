@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'sessions/new'
   get "login" => 'sessions#new'
-  post "login" => 'home#index'
+  post "login" => 'sessions#validate_user'
   root  'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
