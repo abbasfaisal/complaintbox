@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'sessions/new'
   get "login" => 'sessions#new'
   post "login" => 'sessions#validate_user'
+  get '/sessions/logout' => "sessions#logout"
   root  'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

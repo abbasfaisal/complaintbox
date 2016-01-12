@@ -1,15 +1,24 @@
 class SessionsController < ApplicationController
-  def new
-  end
+	def new
+		if session[:username]
+			redirect_to :controller => 'home', :action => 'index'
+			return
+		end
+	end
 
-  def validate_user
-    user = User.where(:username => params[:session][:email], :password => params[:session][:password]).first
-    puts user
-    if user
-      redirect_to :controller => 'home', :action => 'index'
-      return
-    end
-    flash[:alert] = "Invalid username or password"
-    redirect_to :action => 'new'
-  end
+	def validate_user
+    		user = User.where(:username => params[:session][:email], :password => params[:session][:password]).first
+		if user
+			session[:username] = user.username
+			redirect_to :controller => 'home', :action => 'index'
+			return
+    		end
+		flash[:alert] = "Invalid username or password"
+		redirect_to :action => 'new'
+	end
+
+	def logout
+		session[:username] = nil
+		redirect_to '/login'
+	end
 end
