@@ -19,9 +19,9 @@
 				<%= f.password_field  :password, :placeholder => "Password", class: 'password' %>
             		</li>
 			<li>
-				<% if flash[:alert] %>
-					<p style="color: white; font-size:15px; right: 25%"> ! <%= flash[:alert] %></p>
-				<% end %>
+                                <% if flash[:alert] %>
+                                        <p class="login-alert"> <%= flash[:alert] %>!</p>
+                                <% end %>
 			</li>
 		</ol>
         
