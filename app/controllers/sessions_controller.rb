@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 	def new
 		if session[:username]
-			redirect_to :controller => 'home', :action => 'index'
+			redirect_to '/home'
 			return
 		end
 	end
@@ -13,8 +13,7 @@ class SessionsController < ApplicationController
 			redirect_to :controller => 'home', :action => 'index'
 			return
     		end
-		flash[:alert] = "Invalid username or password"
-		redirect_to :action => 'new'
+		redirect_to :action => 'new', alert: "Invalid username or password"
 	end
 
 	def logout

@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   get "login" => 'sessions#new'
   post "login" => 'sessions#validate_user'
   get '/sessions/logout' => "sessions#logout"
-  root  'home#index'
+  root  'sessions#new'
+  get "home" => 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
