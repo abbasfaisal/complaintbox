@@ -1,0 +1,74 @@
+﻿<div id="update-table">
+    <%if !@complaints.nil? %>
+        <div class="vm-list" id="searchresults">
+            <table id = 'vm-table' tfn-value="<%=@area%>" page-no="<%=@page%>"  cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            <input style="margin-left: 10px" id="check-all" type="checkbox" />
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Email
+                        </th>
+                        <th>
+                            Subject
+                        </th>
+                        <th  style="text-align: left;">
+                            Description
+                        </th>
+                        <th>
+                            Date/Time
+                        </th>
+                        <th>
+                            View
+                        </th>
+                        <th>
+                            Delete
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+		<% if !@complaints.nil? %>
+                    <% @complaints.each do |complaint| %>
+                        <tr complaint-id="<%=complaint.id%>" class=<%=complaint.read ? "read" : "unread"%>>
+                            <td>
+                                <input style="margin-left: 10px"  type="checkbox" call-id="<%=complaint.name%>" complaint-id="<%=complaint.id%>"/>
+                            </td>
+                            <td><%=complaint.name%>
+                            </td>
+                            <td><%=complaint.email%>
+                            </td>
+                            <td><%=complaint.subject%>
+                            </td>
+                            <td class="celltrimming" style="text-align: left;"><%=complaint.description%>
+                            </td>
+                            <td width="15%" id="dateTime"><%=complaint.created_at%>
+                            </td>
+                            <td> <%= link_to "View", {controller: "home", action: "get_complaint", complaintid: complaint.id, page: @page, area: @areaname }, remote: true, method: :get, class: "someclass" %>
+                            </td>
+                            <td> <input type="submit" value="" class="deleteBtn" complaint-id="<%=complaint.id%>"/>
+                            </td>
+                        </tr>                       
+                    <%end%>
+		<%end%>
+		</tbody>
+            </table>
+            <div style="margin-left: 50%; margin-top: 1%">
+            <%if @page > 0 %>
+                <%= link_to "Previous", {controller: "home", action: "index", page: @page - 1, area: @areaname }, remote: true, method: :get, class: "prevBtn" %>
+	    <%end%>	
+            <%if @totalcomplaints.count > 15 %>
+                <%= link_to "Next", {controller: "home", action: "index", page: @page + 1, area: @areaname }, remote: true, method: :get, class: "nextBtn" %>
+            <%end%>
+	    </div>
+        </div>
+    <%else%>
+        <p>
+            Please select TFN to view voice mails
+        </p>
+    <%end%>
+</div>
+<%= javascript_include_tag "faisal" %>

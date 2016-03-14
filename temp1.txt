@@ -1,0 +1,799 @@
+//colors
+$color_royal_purple_approx: rebeccapurple;
+$color_silver_approx: #bdbdbd;
+$color_alabaster_approx: #fbfbfb;
+$color_nobel_19_approx: rgba(179,179,179,.19);
+$color_horizon_approx: #5581a6;
+$color_biscay_approx: #152c5e;
+$white: #fff;
+$color_gray_approx: #7f7f7f;
+$gallery: #efefef;
+$color_mercury_approx: #e3e3e3;
+$black: #000;
+$color_venice_blue_approx: #02588b;
+$color_mine_shaft_approx: #333;
+$color_iron_approx: #d3d4d6;
+$color_storm_dust_approx: #666;
+$color_pale_prim_approx: #fffabb;
+$color_pippin_approx: #fee5e1;
+$color_willow_brook_approx: #dff0d8;
+$color_stack_approx: #8d8d8d;
+$color_celeste_approx: #ccc;
+$color_st_tropaz_approx: #1c4c96;
+$color_black_haze_approx: #f7f7f7;
+$color_chilean_heath_approx: #fffce4;
+$color_salem_approx: #00893c;
+$color_san_marino_approx: #4b6aa3;
+$color_pumice_approx: #c8c8c8;
+$black_17: rgba(0,0,0,.17);
+$wild_sand: #f4f4f4;
+$color_mountain_mist_approx: #999999;
+$color_log_cabin_approx: #212121;
+$color_celeste_20_approx: rgba(206, 206, 206, 0.2);
+$color_star_dust_75_approx: rgba(160, 154, 154, 0.75);
+$color_emperor_approx: #4d4d4d;
+$color_fuscous_gray_approx: #4f4f4f;
+$color_shady_lady_approx: #a5a5a5;
+$color_glacier_approx: #75a5d3;
+$color_desert_storm_approx: #f8f8f8;
+$gray:  gray;
+
+//fonts
+$font_0: OpenSansRegular;
+$font_1: OpenSansLight;
+$font_2: OpenSansItalic;
+$font_3: OpenSansBold;
+$font_4: OpenSansBoldItalic;
+$font_5: OpenSansSemibold;
+$font_6: Calibri;
+$font_7: Ubuntu;
+$font_8: Arial;
+$font_9: Sans-Serif;
+
+//urls
+$url_0: url(themes/fonts/OpenSans-Regular-webfont.eot);
+$url_1: url(themes/fonts/OpenSans-Regular-webfont.eot?#iefix);
+$url_2: url(themes/fonts/OpenSans-Regular-webfont.woff);
+$url_3: url(themes/fonts/OpenSans-Regular-webfont.ttf);
+$url_4: url(themes/fonts/OpenSans-Regular-webfont.svg#OpenSansRegular);
+$url_5: url(themes/fonts/OpenSans-Light-webfont.eot);
+$url_6: url(themes/fonts/OpenSans-Light-webfont.eot?#iefix);
+$url_7: url(themes/fonts/OpenSans-Light-webfont.woff);
+$url_8: url(themes/fonts/OpenSans-Light-webfont.ttf);
+$url_9: url(themes/fonts/OpenSans-Light-webfont.svg#OpenSansRegular);
+$url_10: url(themes/fonts/OpenSans-Italic-webfont.eot);
+$url_11: url(themes/fonts/OpenSans-Italic-webfont.eot?#iefix);
+$url_12: url(themes/fonts/OpenSans-Italic-webfont.woff);
+$url_13: url(themes/fonts/OpenSans-Italic-webfont.ttf);
+$url_14: url(themes/fonts/OpenSans-Italic-webfont.svg#OpenSansItalic);
+$url_15: url(themes/fonts/OpenSans-Bold-webfont.eot);
+$url_16: url(themes/fonts/OpenSans-Bold-webfont.eot?#iefix);
+$url_17: url(themes/fonts/OpenSans-Bold-webfont.woff);
+$url_18: url(themes/fonts/OpenSans-Bold-webfont.ttf);
+$url_19: url(themes/fonts/OpenSans-Bold-webfont.svg#OpenSansBold);
+$url_20: url(themes/fonts/OpenSans-BoldItalic-webfont.eot);
+$url_21: url(themes/fonts/OpenSans-BoldItalic-webfont.eot?#iefix);
+$url_22: url(themes/fonts/OpenSans-BoldItalic-webfont.woff);
+$url_23: url(themes/fonts/OpenSans-BoldItalic-webfont.ttf);
+$url_24: url(themes/fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic);
+$url_25: url(themes/fonts/OpenSans-Semibold-webfont.eot);
+$url_26: url(themes/fonts/OpenSans-Semibold-webfont.eot?#iefix);
+$url_27: url(themes/fonts/OpenSans-Semibold-webfont.woff);
+$url_28: url(themes/fonts/OpenSans-Semibold-webfont.ttf);
+$url_29: url(themes/fonts/OpenSans-Semibold-webfont.svg#OpenSansBold);
+$url_30: url(themes/base/images/dropdown.png);
+$url_31: url(themes/base/images/icon-logout.png);
+$url_32: url(themes/base/images/patternbg.png);
+$url_33: url(themes/base/images/icon-message.png);
+$url_34: url(themes/base/images/icon-search.png);
+$url_35: url(themes/base/images/clear-ico.png);
+$url_36: url(themes/base/images/rightheader-bg.png);
+$url_37: url(themes/base/images/icon-unread.png);
+$url_38: url(themes/base/images/icon-delete.png);
+$url_39: url(themes/base/images/sprite-assign.png);
+$url_40: url(themes/base/images/sprite-unassgin.png);
+$url_41: url(themes/base/images/leftpanel-seperator.png);
+$url_42: url(themes/base/images/ico-info.png);
+$url_43: url(themes/base/images/ico-errorNotify.png);
+$url_44: url(themes/base/images/ajax-loader.gif);
+$url_45: url(themes/base/images/icon-searchMain.png);
+$url_46: url(themes/base/images/icon-play-read.png);
+$url_47: url(themes/base/images/ico-play-unread.png);
+$url_48: url(themes/base/images/icon-pause.png);
+$url_49: url(themes/base/images/icon-delete-small.png);
+$url_50: url(themes/base/images/arrow-prev.png);
+$url_51: url(themes/base/images/arrow-next.png);
+$url_52: url(themes/base/images/arrow-pop.png);
+$url_53: url(themes/base/images/icon-close-pop.png);
+$url_54: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRkNGQ0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRmNGY0ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+$url_55: url(themes/base/images/icon-copyClip.png);
+$url_56: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+$url_57: url(themes/base/images/icon-download.png);
+
+//@extend-elements
+//original selectors
+//input[type="text"], input[type="password"], textarea
+%extend_1 {
+	font-family: $font_0, $font_6, $font_7, $font_8, $font_9;
+	font-size: 12px;
+	padding: 3px 5px;
+	border: 1px solid $color_silver_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 12px;
+	//Instead of the line below you could use @include background-clip($clip)
+	background-clip: padding-box;
+	background-color: $color_alabaster_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: inset 1px 2px 4px $color_nobel_19_approx;
+}
+
+//original selectors
+//.vm-list th, .vm-list td
+%extend_2 {
+	text-align: center;
+	border-bottom: 1px solid $color_celeste_approx;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 5px 1px 4px;
+	text-overflow: ellipsis;
+}
+
+
+.test {
+	color: $color_royal_purple_approx;
+}
+﻿* {
+	padding: 0;
+	margin: 0;
+}
+@font-face {
+	font-family: $font_0;
+	src: $url_0;
+	src: $url_1 format('embedded-opentype'), $url_2 format('woff'), $url_3 format('truetype'), $url_4 format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: $font_1;
+	src: $url_5;
+	src: $url_6 format('embedded-opentype'), $url_7 format('woff'), $url_8 format('truetype'), $url_9 format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: $font_2;
+	src: $url_10;
+	src: $url_11 format('embedded-opentype'), $url_12 format('woff'), $url_13 format('truetype'), $url_14 format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: $font_3;
+	src: $url_15;
+	src: $url_16 format('embedded-opentype'), $url_17 format('woff'), $url_18 format('truetype'), $url_19 format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: $font_4;
+	src: $url_20;
+	src: $url_21 format('embedded-opentype'), $url_22 format('woff'), $url_23 format('truetype'), $url_24 format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: $font_5;
+	src: $url_25;
+	src: $url_26 format('embedded-opentype'), $url_27 format('woff'), $url_28 format('truetype'), $url_29 format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+input[type="text"] {
+	@extend %extend_1;
+	&:focus {
+		outline: none;
+	}
+}
+input[type="password"] {
+	@extend %extend_1;
+	&:focus {
+		outline: none;
+	}
+}
+textarea {
+	@extend %extend_1;
+	&:focus {
+		outline: none;
+	}
+}
+input::-ms-clear {
+	display: none;
+}
+.select_style {
+	overflow: hidden;
+	width: 200px;
+	float: left;
+	border: 1px solid $color_silver_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 12px;
+	//Instead of the line below you could use @include background-clip($clip)
+	background-clip: padding-box;
+	background-color: $color_alabaster_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: inset 1px 2px 4px $color_nobel_19_approx;
+	background: $url_30 95% center no-repeat $color_alabaster_approx !important;
+	select {
+		font-family: $font_0, $font_6, $font_7, $font_8, $font_9;
+		font-size: 12px;
+		appearance: none;
+		width: 120%;
+		background: transparent;
+		border: none;
+		outline: none;
+		padding: 1px 12px 1px 5px;
+	}
+}
+select {
+	option {
+		font-size: 11px;
+		padding: 0 5px;
+	}
+	optgroup {
+		font-style: normal;
+		font-weight: bold;
+	}
+}
+a {
+	color: $color_horizon_approx;
+	text-decoration: none;
+	img {
+		border: none;
+	}
+	&:hover {
+		text-decoration: underline;
+	}
+}
+header {
+	background-color: $color_biscay_approx;
+	color: $color_alabaster_approx !important;
+	height: 30px;
+	padding: 8px 0;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	overflow: hidden;
+	h1 {
+		padding-left: 10px;
+	}
+	a {
+		color: $color_alabaster_approx !important;
+		&:hover {
+			text-decoration: none !important;
+		}
+	}
+	.logout {
+		width: 19px;
+		height: 18px;
+		background: $url_31 no-repeat;
+		text-indent: 30px;
+		display: inline-block;
+		overflow: hidden;
+		position: relative;
+		top: 5px;
+		right: 10px;
+		color: $white;
+	}
+	.user {
+		display: inline-block;
+		margin-right: 10px;
+		font-size: 17px;
+	}
+}
+footer {
+	background-color: $color_gray_approx;
+	padding: 10px 0;
+	color: $white;
+	overflow: hidden;
+	float: left;
+	width: 100%;
+	p {
+		padding-right: 10px;
+	}
+}
+li {
+	list-style-type: none;
+}
+#content {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin-top: 45px;
+	min-height: 600px;
+}
+.voice-header-div {
+	height: 100px;
+	&.right-pane {
+		height: 107px;
+	}
+}
+.left-pane {
+	float: left;
+	height: 107px;
+	width: 20%;
+	background: $url_32 repeat-x $gallery;
+	border-right: solid 1px $color_mercury_approx;
+	margin-left: -1px;
+	.container {
+		position: relative;
+		top: 32px;
+		left: 20px;
+		width: 80%;
+	}
+	.leftPanelHeading {
+		font-size: 16px;
+		background: $url_33 no-repeat;
+		padding-left: 25px;
+		height: 20px;
+		line-height: 14px;
+	}
+	.searchfield {
+		position: relative;
+		top: 14px;
+		.searchIco {
+			width: 15px;
+			height: 15px;
+			background: $url_34 no-repeat;
+			position: absolute;
+			right: -5px;
+			top: 5px;
+			border: none;
+			cursor: pointer;
+		}
+		.clearIco {
+			width: 15px;
+			height: 15px;
+			background: $url_35 no-repeat;
+			position: absolute;
+			right: -5px;
+			top: 5px;
+			border: none;
+			cursor: pointer;
+		}
+		.searchinput {
+			width: 98%;
+			padding-left: 10px;
+		}
+	}
+}
+.right-pane {
+	background: $url_36 repeat-x;
+	float: left;
+	width: 80%;
+	.headingContainer {
+		position: relative;
+		top: 27px;
+		left: 20px;
+		width: 50%;
+		h1 {
+			font-family: $font_6, $font_7;
+			font-size: 30px;
+			font-weight: normal;
+			color: $black;
+			span {
+				font-size: 17px;
+				color: $color_venice_blue_approx;
+			}
+		}
+	}
+	ul {
+		position: relative;
+		top: -21px;
+		right: 20px;
+		list-style: none;
+		float: right;
+		li {
+			display: inline-block;
+			margin-right: 10px;
+			float: left;
+			a {
+				width: 56px;
+				text-align: center;
+				font-size: 12px;
+				color: $color_mine_shaft_approx;
+				padding-top: 58px;
+				display: inline-block;
+				cursor: pointer;
+				&:hover {
+					text-decoration: none;
+				}
+				&.unread {
+					background: $url_37 no-repeat;
+					&:hover {
+						background: $url_37 no-repeat right top;
+					}
+				}
+				&.delete {
+					background: $url_38 no-repeat;
+					&:hover {
+						background: $url_38 no-repeat right top;
+					}
+				}
+				&.assign {
+					background: $url_39 no-repeat 5px top;
+					width: 63px;
+					&:hover {
+						background: $url_39 no-repeat -69px top;
+					}
+				}
+				&.Unassign {
+					background: $url_40 no-repeat left top;
+					width: 52px;
+					&:hover {
+						background: $url_40 no-repeat right top;
+						width: 52px;
+					}
+				}
+			}
+		}
+	}
+}
+#showtable {
+	margin: 0;
+	margin-top: -27px;
+}
+.alert {
+	color: $color_storm_dust_approx;
+	padding: 10px 10px 10px 34px;
+	background: $url_42 $color_pale_prim_approx no-repeat 10px center;
+}
+.errorNotify {
+	color: $color_storm_dust_approx;
+	padding: 10px 10px 10px 34px;
+	background: $url_43 $color_pippin_approx no-repeat 10px center;
+}
+#ajax-progress {
+	position: fixed;
+	z-index: 102;
+	margin-left: -50px;
+	top: 0;
+	left: 50%;
+	color: $color_storm_dust_approx;
+	padding: 10px 10px 10px 30px;
+	background: $url_44 $color_willow_brook_approx no-repeat 10px center;
+}
+.vm-search-bar {
+	margin: 10px;
+	margin-bottom: 0;
+	display: inline-block;
+	.searchfield {
+		position: relative;
+		float: right;
+		.searchIco {
+			background: $url_34 no-repeat scroll 0 0 transparent;
+			height: 15px;
+			position: absolute;
+			right: 12px;
+			top: 4px;
+			width: 15px;
+		}
+	}
+	.searchMain {
+		cursor: pointer;
+		width: 25px;
+		height: 26px;
+		background: $url_45 no-repeat;
+		border: none;
+		margin-left: 10px;
+		float: right;
+	}
+	.searchBox {
+		width: 250px;
+		border: none;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 10px;
+		border: solid 1px $color_silver_approx;
+	}
+	input {
+		padding-top: 2px;
+		padding-bottom: 2px;
+		float: left;
+		margin-right: 10px;
+		padding-left: 10px;
+	}
+	label {
+		color: $color_stack_approx;
+		font-size: 12px;
+		margin: 0 5px;
+		display: inline-block;
+	}
+	span {
+	}
+}
+.celltrimming {
+	text-overflow: ellipsis;
+	max-width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: left;
+	span {
+		font-size: 11px;
+		color: $color_storm_dust_approx;
+		padding: 0 5px;
+		border-right: solid 1px $color_celeste_approx;
+		float: left;
+		display: inline-block;
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+.vm-list {
+	clear: both;
+	margin-top: 10px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	table {
+		width: 100%;
+	}
+	thead {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+		tr {
+			background-color: $color_st_tropaz_approx;
+			color: $white;
+		}
+	}
+	th {
+		@extend %extend_2;
+	}
+	td {
+		@extend %extend_2;
+		&#dateTime span.time {
+			color: $color_salem_approx;
+			margin-left: 5px;
+		}
+	}
+	.media {
+		width: 18px;
+		height: 18px;
+		cursor: pointer;
+	}
+	tbody tr {
+		&:hover {
+			background-color: $color_black_haze_approx;
+			text-overflow: ellipsis;
+		}
+		&.unread {
+			background-color: $color_chilean_heath_approx;
+		}
+	}
+	tr td .media {
+		&.playIco {
+			background: $url_46 no-repeat;
+		}
+		&.playIcoUnread {
+			background: $url_47 no-repeat;
+		}
+		&.pauseIco {
+			background: $url_48 no-repeat;
+		}
+	}
+}
+tr {
+	height: 15px;
+}
+.prevBtn {
+	font-size: 11px;
+	padding: 3px 4px 3px 20px;
+	margin-right: 5px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	color: $color_san_marino_approx;
+	background: $url_50 no-repeat 9px center $gallery;
+}
+.nextBtn {
+	font-size: 11px;
+	padding: 3px 20px 3px 10px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	color: $color_san_marino_approx;
+	background: $url_51 no-repeat 85% center $gallery;
+}
+.page-index {
+	position: relative;
+	right: 100px;
+}
+.login-button {
+	position: fixed;
+	margin-left: 700px;
+	margin-top: -28px;
+}
+#login {
+	display: block;
+	font-size: .85em;
+	text-align: center;
+	margin-top: 100px;
+	margin-right: 50px;
+	ul {
+		margin: 1px;
+	}
+	li {
+		display: block;
+		padding: 10px;
+		list-style: none;
+	}
+}
+#login-logo {
+	margin-left: 15px;
+	font-size: 20px;
+}
+#remember-me {
+	margin-left: 500px;
+	padding-right: 200px;
+}
+.overlay_form {
+	position: absolute !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	border: solid 1px $color_pumice_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 2px 4px 6px $black_17;
+	background: $wild_sand;
+	width: 411px;
+	height: 178px;
+	.headSection {
+		position: relative;
+		background: $color_st_tropaz_approx;
+		height: 33px;
+		width: 100%;
+		.arrow {
+			width: 63px;
+			height: 30px;
+			background: $url_52 no-repeat;
+			position: absolute;
+			top: -25px;
+			right: 30px;
+		}
+		h1 {
+			font-size: 18px;
+			font-weight: normal;
+			color: $white;
+			padding: 5px 0 0 10px;
+		}
+		.close {
+			width: 18px;
+			height: 18px;
+			background: $url_53 no-repeat;
+			position: absolute;
+			right: 10px;
+			top: 7px;
+		}
+	}
+	.contentSection {
+		padding: 10px 30px;
+		padding-top: 27px;
+		display: block;
+		.actionBtn {
+			width: 100%;
+			margin-top: 25px;
+		}
+		a {
+			&.copyClip {
+				color: $white;
+				padding: 5px 10px 5px 6px;
+				margin-right: 5px;
+				height: 25px;
+				width: 140px;
+				border: 1px solid $color_log_cabin_approx;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 3px;
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 1px 3px $color_celeste_20_approx, inset 0 1px 0 $color_star_dust_75_approx;
+				background-image: $url_54;
+				background-image: linear-gradient(bottom, $color_emperor_approx 0, $color_fuscous_gray_approx 100%);
+				background-color: $color_fuscous_gray_approx;
+				span {
+					width: 11px;
+					height: 10px;
+					background: $url_55 no-repeat;
+					display: inline-block;
+					margin-right: 5px;
+				}
+			}
+			&:hover {
+				&.copyClip {
+					text-decoration: none;
+				}
+				&.download {
+					text-decoration: none;
+				}
+			}
+			&.download {
+				height: 25px;
+				width: 140px;
+				padding: 5px 10px 5px 6px;
+				border: 1px solid $color_shady_lady_approx;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 3px;
+				//Instead of the line below you could use @include background-clip($clip)
+				background-clip: padding-box;
+				background-color: $color_glacier_approx;
+				background-image: $url_56;
+				background-image: linear-gradient(bottom, $color_desert_storm_approx 0, $white 100%);
+				background-color: $color_alabaster_approx;
+				span {
+					width: 13px;
+					height: 12px;
+					background: $url_57 no-repeat;
+					display: inline-block;
+					margin-right: 5px;
+				}
+			}
+		}
+		.pathInfo input {
+			height: 20px;
+			width: 350px;
+			padding: 5px;
+			border: none;
+			border-bottom: solid 1px $white;
+			background-color: $color_mercury_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: inset 0 0 4px 0 $color_mountain_mist_approx;
+		}
+	}
+}
+.pop {
+	display: block;
+	border: 1px solid $gray;
+	width: 65px;
+	text-align: center;
+	padding: 6px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	text-decoration: none;
+	margin: 0 auto;
+}
+.assign-text {
+	text-align: center;
+}
+#leftContent.left-pane {
+	background: $gallery;
+}
+#rightContent.right-pane {
+	background: $white;
+}
+.tfn-list li {
+	padding: 5px 10px;
+	height: 19px;
+	font-size: 12px;
+	text-indent: 15px;
+	background: $url_41 repeat-x bottom left;
+	span {
+		font-size: 11px;
+		margin-right: 25px;
+	}
+	&:hover {
+		background-color: $color_iron_approx;
+	}
+}
+.unread td {
+	font-weight: bold;
+	text-overflow: ellipsis;
+}
+input.deleteBtn {
+	cursor: pointer;
+	margin-left: 10px;
+	width: 18px;
+	height: 18px;
+	background: $url_49 no-repeat top left;
+	border: none;
+	&:hover {
+		background: $url_49 bottom center;
+	}
+}
+img.assigntomeLink {
+	background: no-repeat center center;
+	margin-left: 15px;
+	width: 17px;
+	height: 18px;
+}

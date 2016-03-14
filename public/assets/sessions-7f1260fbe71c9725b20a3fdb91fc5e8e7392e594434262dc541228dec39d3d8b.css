@@ -1,0 +1,525 @@
+/* line 2, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions * {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  /* line 1, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+  .sessions {
+    font-family: 'OpenSansRegular';
+    src: url("themes/fonts/OpenSans-Regular-webfont.eot");
+    src: url("themes/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("themes/fonts/OpenSans-Regular-webfont.woff") format("woff"), url("themes/fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("themes/fonts/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+@font-face {
+  /* line 1, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+  .sessions {
+    font-family: 'OpenSansLight';
+    src: url("themes/fonts/OpenSans-Light-webfont.eot");
+    src: url("themes/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("themes/fonts/OpenSans-Light-webfont.woff") format("woff"), url("themes/fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("themes/fonts/OpenSans-Light-webfont.svg#OpenSansRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+@font-face {
+  /* line 1, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+  .sessions {
+    font-family: 'OpenSansItalic';
+    src: url("themes/fonts/OpenSans-Italic-webfont.eot");
+    src: url("themes/fonts/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("themes/fonts/OpenSans-Italic-webfont.woff") format("woff"), url("themes/fonts/OpenSans-Italic-webfont.ttf") format("truetype"), url("themes/fonts/OpenSans-Italic-webfont.svg#OpenSansItalic") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+@font-face {
+  /* line 1, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+  .sessions {
+    font-family: 'OpenSansBold';
+    src: url("themes/fonts/OpenSans-Bold-webfont.eot");
+    src: url("themes/fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("themes/fonts/OpenSans-Bold-webfont.woff") format("woff"), url("themes/fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("themes/fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+@font-face {
+  /* line 1, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+  .sessions {
+    font-family: 'OpenSansBoldItalic';
+    src: url("themes/fonts/OpenSans-BoldItalic-webfont.eot");
+    src: url("themes/fonts/OpenSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("themes/fonts/OpenSans-BoldItalic-webfont.woff") format("woff"), url("themes/fonts/OpenSans-BoldItalic-webfont.ttf") format("truetype"), url("themes/fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+@font-face {
+  /* line 1, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+  .sessions {
+    font-family: 'OpenSansSemibold';
+    src: url("themes/fonts/OpenSans-Semibold-webfont.eot");
+    src: url("themes/fonts/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("themes/fonts/OpenSans-Semibold-webfont.woff") format("woff"), url("themes/fonts/OpenSans-Semibold-webfont.ttf") format("truetype"), url("themes/fonts/OpenSans-Semibold-webfont.svg#OpenSansBold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+/* line 74, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions body {
+  font-size: 13px;
+  background: url(themes/base/images/loginbg.jpg) repeat;
+  font-family: 'OpenSansRegular';
+}
+/* line 80, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions input[type="text"], .sessions input[type="password"], .sessions textarea, .sessions select {
+  outline: none;
+}
+/* line 84, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions input[type="text"], .sessions input[type="password"], .sessions textarea {
+  font-family: 'OpenSansRegular' Calibri, "Ubuntu", Arial, Sans-Serif;
+}
+/* line 88, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions input[type="text"], .sessions input[type="password"], .sessions textarea {
+  padding: 3px 5px;
+  width: 295px;
+  background: transparent;
+  border: solid 1px #FFF;
+  color: #FFF;
+}
+/* line 97, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions input.login {
+  background: url("themes/base/images/user.png") no-repeat 5px center;
+}
+/* line 102, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions input.password {
+  background: url("themes/base/images/password.png") no-repeat 5px center;
+}
+/* line 107, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions input.login, .sessions input.password {
+  text-indent: 30px;
+  line-height: 18px;
+  height: 25px;
+}
+/* line 116, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .validation {
+  clear: both;
+  display: block;
+  text-align: left;
+  color: #FFF;
+  padding: 0 !important;
+}
+/* line 117, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .logincheck {
+  margin-top: 20px;
+}
+/* line 119, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions a {
+  color: #5581a6;
+  text-decoration: none;
+}
+/* line 124, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions #loginForm {
+  width: 307px;
+  height: 225px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-top: -112px;
+  margin-left: -153px;
+}
+/* line 134, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions a:hover {
+  text-decoration: underline;
+}
+/* line 139, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions header {
+  background-color: #152c5e;
+  color: #fbfbfb !important;
+  padding: 10px;
+  height: 30px;
+  overflow: hidden;
+}
+/* line 147, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions header a {
+  color: #fbfbfb !important;
+}
+/* line 151, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions header a:hover {
+  text-decoration: none !important;
+}
+/* line 155, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions header .logout {
+  width: 19px;
+  height: 19px;
+  background: url("themes/base/images/icon-logout.png") no-repeat;
+  text-indent: 30px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  top: 5px;
+}
+/* line 165, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions header .user {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 171, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions footer {
+  background-color: #7f7f7f;
+  padding: 10px;
+  color: #FFF;
+  overflow: hidden;
+}
+/* line 179, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions li {
+  list-style-type: none;
+}
+/* line 183, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions #content {
+  clear: both;
+  overflow: hidden;
+  min-height: 600px;
+}
+/* line 189, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .voice-header-div {
+  height: 100px;
+}
+/* line 193, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .left-pane {
+  float: left;
+  height: 107px;
+  width: 20%;
+  background: url(themes/base/images/patternbg.png) repeat-x #efefef;
+  border-right: solid 1px #e3e3e3;
+  margin-left: -1px;
+}
+/* line 202, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions #leftContent.left-pane {
+  background: #efefef;
+}
+/* line 206, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .left-pane .container {
+  position: relative;
+  top: 32px;
+  left: 20px;
+  width: 80%;
+}
+/* line 214, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .left-pane .leftPanelHeading {
+  font-size: 16px;
+  background: url(themes/base/images/icon-message.png) no-repeat;
+  padding-left: 25px;
+}
+/* line 221, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .left-pane .searchfield {
+  position: relative;
+  top: 14px;
+}
+/* line 227, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .left-pane .searchfield .searchIco {
+  width: 15px;
+  height: 15px;
+  background: url(themes/base/images/icon-search.png) no-repeat;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+/* line 238, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .left-pane .searchfield input {
+  width: 98%;
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  text-indent: 10px;
+}
+/* line 247, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .right-pane {
+  background: url(themes/base/images/rightheader-bg.png) repeat-x;
+  float: left;
+  height: 107px;
+  width: 80%;
+}
+/* line 255, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions #rightContent.right-pane {
+  background: #FFF;
+}
+/* line 260, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .right-pane .headingContainer {
+  position: relative;
+  top: 27px;
+  left: 20px;
+  width: 50%;
+}
+/* line 268, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .right-pane .headingContainer h1 {
+  font-family: 'OpenSansLight';
+  font-size: 30px;
+  font-weight: normal;
+  color: #000;
+}
+/* line 276, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .right-pane .headingContainer h1 span {
+  font-size: 13px;
+  color: #02588b;
+}
+/* line 282, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .right-pane ul {
+  position: relative;
+  top: -27px;
+  right: 20px;
+  list-style: none;
+  float: right;
+}
+/* line 291, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .right-pane ul li {
+  width: 56px;
+  display: inline-block;
+  margin-right: 10px;
+  float: left;
+}
+/* line 299, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .right-pane ul li a {
+  width: 56px;
+  text-align: center;
+  padding-top: 58px;
+  display: inline-block;
+}
+/* line 307, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .right-pane ul li a:hover {
+  text-decoration: none;
+}
+/* line 312, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .right-pane ul li a.unread {
+  background: url(themes/base/images/icon-unread.png) no-repeat;
+}
+/* line 316, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .right-pane ul li a.delete {
+  background: url(themes/base/images/icon-delete.png) no-repeat;
+}
+/* line 320, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .tfn-list li {
+  padding: 5px 10px;
+  height: 19px;
+  font-size: 12px;
+  text-indent: 15px;
+  background: url(themes/base/images/leftpanel-seperator.png) repeat-x bottom left;
+}
+/* line 328, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .tfn-list li span {
+  font-size: 11px;
+  margin-right: 25px;
+}
+/* line 334, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .tfn-list li:hover {
+  background-color: #d3d4d6;
+}
+/* line 338, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions #showtable {
+  margin: 10px;
+}
+/* line 339, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .alert {
+  color: #666;
+  padding: 10px 10px 10px 30px;
+  background: url(themes/base/images/ico-info.png) #FCF8E3 no-repeat 10px center;
+}
+/* line 342, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions #ajax-progress {
+  color: #666;
+  padding: 10px 10px 10px 30px;
+  background: url(themes/base/images/ajax-loader.gif) #DFF0D8 no-repeat 10px center;
+}
+/* line 343, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-search-bar {
+  margin: 10px;
+}
+/* line 348, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-search-bar .searchfield {
+  position: relative;
+  float: right;
+}
+/* line 354, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-search-bar .searchMain {
+  width: 25px;
+  height: 26px;
+  background: url(themes/base/images/icon-searchMain.png) no-repeat;
+  border: none;
+}
+/* line 362, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-search-bar .searchBox {
+  width: 250px;
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: solid 1px #bdbdbd;
+}
+/* line 372, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-search-bar input {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-right: 5px;
+  text-indent: 5px;
+}
+/* line 377, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-search-bar label {
+  color: #8d8d8d;
+  font-size: 12px;
+  margin: 0 5px;
+  display: inline-block;
+}
+/* line 383, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-search-bar .searchfield .searchIco {
+  background: url("themes/base/images/icon-search.png") no-repeat scroll 0 0 transparent;
+  height: 15px;
+  position: absolute;
+  right: 12px;
+  top: 4px;
+  width: 15px;
+}
+/* line 392, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .celltrimming {
+  text-overflow: ellipsis;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 399, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .celltrimming span {
+  font-size: 11px;
+  color: #666;
+  padding: 0 5px;
+  border-right: solid 1px #CCC;
+  float: left;
+  display: inline-block;
+}
+/* line 409, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .celltrimming span:last-child {
+  border-right: none;
+}
+/* line 414, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-list {
+  clear: both;
+}
+/* line 418, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-list table {
+  width: 100%;
+}
+/* line 421, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-list thead {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 426, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-list thead tr {
+  background-color: #1c4c96;
+  color: white;
+}
+/* line 433, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-list tr.unread {
+  font-family: 'OpenSansSemibold';
+}
+/* line 439, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-list th, .sessions .vm-list td {
+  padding: 3px;
+  text-align: left;
+  border-bottom: solid 1px #CCC;
+  font-size: 12px;
+}
+/* line 446, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-list .media {
+  width: 18px;
+  height: 18px;
+}
+/* line 452, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-list tr td .media.playIco {
+  background: url(themes/base/images/icon-play-read.png) no-repeat;
+}
+/* line 457, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-list tr td .media.playIcoUnread {
+  background: url(themes/base/images/ico-play-unread.png) no-repeat;
+}
+/* line 462, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-list tr td .media.pauseIco {
+  background: url(themes/base/images/icon-pause.png) no-repeat;
+}
+/* line 467, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .vm-list td#dateTime span.time {
+  color: #00893c;
+  margin-left: 5px;
+}
+/* line 469, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions input.deleteBtn {
+  margin-left: 10px;
+  width: 18px;
+  height: 18px;
+  background: url(themes/base/images/icon-delete-small.png) no-repeat;
+  border: none;
+}
+/* line 471, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .prevBtn {
+  font-size: 11px;
+  padding: 3px 4px 3px 20px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #4b6aa3;
+  background: url(themes/base/images/arrow-prev.png) no-repeat 9px center #efefef;
+}
+/* line 474, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .nextBtn {
+  font-size: 11px;
+  padding: 3px 20px 3px 10px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #4b6aa3;
+  background: url(themes/base/images/arrow-next.png) no-repeat 85% center #efefef;
+}
+/* line 481, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .page-index {
+  position: relative;
+  right: 100px;
+}
+/* line 486, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions .login-button {
+  position: fixed;
+  margin-left: 700px;
+  margin-top: -28px;
+}
+/* line 492, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions #login {
+  display: block;
+  font-size: .85em;
+  text-align: center;
+}
+/* line 498, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions #login ul {
+  margin: 1px;
+}
+/* line 502, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions #login li {
+  display: block;
+  padding: 8px 0;
+  list-style: none;
+}
+/* line 508, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions #login-logo {
+  background: url(themes/base/images/loginlogo.png) no-repeat;
+  width: 307px;
+  height: 60px;
+}
+/* line 515, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions #remember-me {
+  color: #FFF;
+}
+/* line 519, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions input.loginbtn {
+  background-color: #333;
+  color: #FFF;
+  padding: 5px 15px;
+  float: right;
+  text-transform: uppercase;
+  border: none;
+}
+/* line 528, /home/vagrant/Rails/ComplaintBox/complaintbox/app/assets/stylesheets/sessions.scss */
+.sessions input.loginbtn:hover {
+  background-color: #7d7d7d;
+  cursor: pointer;
+}
