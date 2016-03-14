@@ -1,0 +1,38 @@
+                <ol class="complaint-form">
+		<div style="padding: 45px; padding-bottom: 0px; font-size: 18px; width: 100%">
+        		Complaint details... 
+			<span><%= link_to "Go back to the complaint list", {controller: "home", action: "index", page: @page, area: @areaname }, remote: true, method: :get, class: "prevBtn", style: "top: -1px; margin-left: 50px;" %> <span>
+		</div>
+                <%= form_for("") do |f| %>
+			<li style="display: inline-block">
+			<div>
+                                <%= f.label :name %>
+                                <%= f.text_field :name, value:@complaint.name, readonly:true  %>
+                        </div>
+
+                        <div>
+                                <%= f.label :email %>
+                                <%= f.text_field :email, value:@complaint.email, readonly:true  %>
+                        </div>
+
+                        <div>
+				<%= f.label  :datetime %>
+				<%= f.text_field  :datetime, value:@complaint.created_at, readonly:true  %>
+                        </div>
+			</li>     
+                        <li>
+                        <div>
+                                <%= f.label  :subject %>
+                                <%= f.text_field  :subject, value:@complaint.subject, readonly:true , style:"width: 825px" %>
+                        </div>
+                        </li>
+                        <li>
+                        <div>
+                                <%= f.label  :description %>
+				<%= f.text_area :description, value:@complaint.description, readonly:true , class:"complaint-description" %>
+                        </div>
+                        </li>
+                </ol>
+                <% end %>
+</div>
+</div>

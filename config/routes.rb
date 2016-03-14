@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   get '/sessions/logout' => "sessions#logout"
   root  'sessions#new'
   get "home" => 'home#index'
-
+  get "error_page" => 'home#error_page'
+  post "home/delete_complaint" => 'home#delete_complaint'
+  post "home/mark_unread" => 'home#mark_unread'
+  get "home/get_complaint"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

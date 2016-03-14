@@ -6,7 +6,7 @@
             </div>
             <div class="searchfield">
                 <input id="tfn-search-box" placeholder="Search TFN " class="searchinput" name="tfn-search"
-                    type="text" onkeypress="return isNumberKey(event)" />
+                    type="text" value=""/>
                 <input id="clear-search" onclick="clearTfnSearchBox()" type="button" class="searchIco" />
                 <input type="submit" value="clear" onclick="clearTfnSearchBox()" style="display: none;
                     position: relative; top: -25px; margin-left: 180px; float: left" />
@@ -16,26 +16,24 @@
     <div class="voice-header-div right-pane">
         <div class="headingContainer">
             <h1>
-                Complaint Mail Inbox <span id="selected-tfn"></span>
+                Complaint Box <span id="selected-tfn"></span>
             </h1>
         </div>
         <ul>
-            <li><a class="unread" onclick="markUnread()">Unread</a></li>
-            <li><a class="delete" onclick="deleteMany()">Delete</a></li>
-            <li><a class="assign" onclick="assignToMe()">Assign to me</a></li>
-            <li><a class="Unassign" onclick="unassign()">Unassign</a></li>
+            <li><a id="unread" class="unread">Unread</a></li>
+            <li><a class="delete"">Delete</a></li>
         </ul>
     </div>
 </div>
 <div style="clear: both;">
     <div id="leftContent" class="left-pane" style="min-height: 650px; height: auto;">
         <ul class="tfn-list">
-            <% if !@TFNList.nil? %>
-				<% @TFNList.each do |record| %>
-                <li tfn-value="<%=record%>">
-					<a href="#"  onclick="getTable(<%=record%>)"><%=record%></a>
-				</li>
-				<% end %>
+            <% if !@areas.nil? %>
+		<% @areas.each do |area| %>
+		<li tfn-value="<%=area.areaname%>">
+			<%= link_to area.areaname, {controller: "home", action: "index", area: area.areaname}, remote: true, method: :get, class: "thisclass" %>
+		</li>
+		<% end %>
             <% end %>
         </ul>
     </div>
@@ -46,55 +44,15 @@
             </p>
         </div>
         <div id="error-message">
-                <p class="alert">
-                    Please select TFN to view voice mails
-                </p>
-        </div>
-        <div class="vm-search-bar">   
+             <p class="alert">
+                Please select TFN to view voice mails
+             </p>
         </div>
         <div id="showtable">
         </div>
     </div>
 </div>
 <script>
-$(document).ready(function () {
-    $('.datepicker').datepicker();
-
-    $('#tfn-search-box').keyup(function () {
-        if ($(this).val() == '') {
-            $("#clear-search").attr("class", "searchIco");
-            $('.tfn-list li').show();
-        }
-        else {
-            var tfn_prefix = $(this).val();
-            $('.tfn-list li').hide();
-            $(".tfn-list li[tfn-value^='" + tfn_prefix + "']").show();
-        }
-    });
-});
-
-function getTable(tfnn) {
-			alert(tfnn);
-            $.ajax({
-                url: "gettable",
-                type: 'GET',
-                data: { mytfn: tfnn },
-                beforeSend: function () {
-                    $("#error-message").html("");
-                    $("#ajax-progress").show();
-                },
-                complete: function () {
-                    $("#ajax-progress").hide();
-                },
-                dataType: 'html',
-                traditional: true,
-                contentType: 'html',
-                error: failedMessage,
-                success: function (result) {
-                    $('#showtable').html(result);
-                }
-            });
-}			
 </script>
 
 

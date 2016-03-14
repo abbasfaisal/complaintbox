@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
 			redirect_to '/home'
 			return
 		end
+#	render :layout => false
 	end
 
 	def validate_user

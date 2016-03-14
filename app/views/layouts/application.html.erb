@@ -2,17 +2,19 @@
 <html>
 <head>
   <title>Complaintbox</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'home', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+     <% if session[:username] %>
     <header>
-        <h1 style="float: left"></h1>
-        <div style="float: right">
-  	<span class="user" style="font-size: 17px; margin-right: 18px"><strong>Welcome!</strong></span>
+        <h1 style="float: left; margin-bottom: 3px"><a href="/">Complaint Box</a></h1>
+        <div style="float: right; top: 25%">
+  	<span class="user" style="font-size: 17px; margin-right: 23px; margin-top: 7px"><strong>Welcome!</strong></span>
   	<strong> <%= link_to "Log off", {controller: "sessions", action: "logout"}, class: "logout", style:"height: 19px; top: 4px" %></strong></div>
     </header>
+        <% end %>
     <div id="content">
         <section class="content-wrapper main-content clear-fix">
 		<%= yield %>
